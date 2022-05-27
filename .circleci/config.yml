@@ -9,6 +9,16 @@ defaults: &defaults
     - image: circleci/node:14.17.5
 
 jobs:
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+      - run: yarn build
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .
   publish:
     <<: *defaults
     steps:
