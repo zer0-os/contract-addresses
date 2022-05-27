@@ -4,8 +4,7 @@
   "description": "A place to store all the contract addresses for the Zero ecosystem",
   "main": "index.ts",
   "scripts": {
-    "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
