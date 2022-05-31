@@ -1,21 +1,24 @@
 export interface Networks {
-  [networkName: string]: Categories;
+  [networkName: string]: Maybe<Categories>;
 }
 
-interface Categories {
-  infra: Addresses;
+export interface Categories {
+  zNS: Addresses;
+  zAuction: Addresses;
   tokens: Addresses;
   staking: Addresses;
   sales: Sales;
 }
 
-interface Addresses {
-  [contractName: string]: string;
+export interface Addresses {
+  [contractName: string]: Maybe<string>;
 }
-interface Sales {
-  [saleName: string]: string | SaleSeason;
+export interface Sales {
+  [saleName: string]: Maybe<string | SaleSeason>;
 }
 
-interface SaleSeason {
-  [seasonName: string]: string;
+export interface SaleSeason {
+  [seasonName: string]: Maybe<string>;
 }
+
+type Maybe<T> = T | undefined | null;

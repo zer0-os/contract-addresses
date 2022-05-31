@@ -1,11 +1,15 @@
 import { Networks } from "./types";
+export * from "./types";
 
-export const networkAddresses: Networks = {
+export const zer0ProtocolAddresses: Networks = {
   mainnet: {
-    infra: {
+    zNS: {
       registrar: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
       znsHub: "0x3F0d0a0051D1E600B3f6B35a07ae7A64eD1A10Ca",
       basicController: "0xa05Ae774Da859943B7B859cd2A6aD9F5f1651d6a",
+      zDAO: "",
+    },
+    zAuction: {
       zAuction: "0x411973Fa81158A4c7767a0D6F7dF62723fDd541F",
       legacyZAuction: "0x05cBD37cA528B7ea50800aA80ddD0F9F30C952F0",
     },
@@ -36,13 +40,15 @@ export const networkAddresses: Networks = {
     },
   },
   kovan: {
-    infra: {
+    zNS: {
       registrar: "0xC613fCc3f81cC2888C5Cccc1620212420FFe4931",
       znsHub: "",
       basicController: "0x2EF34C52138781C901Fe9e50B64d80aA9903f730",
+      zDao: "",
+    },
+    zAuction: {
       zAuction: "0x18A804a028aAf1F30082E91d2947734961Dd7f89",
       legacyZauction: "0x18A804a028aAf1F30082E91d2947734961Dd7f89",
-      zDao: "",
     },
     tokens: {
       wildToken: "0x50A0A3E9873D7e7d306299a75Dc05bd3Ab2d251F",
@@ -57,13 +63,15 @@ export const networkAddresses: Networks = {
     sales: {},
   },
   rinkeby: {
-    infra: {
+    zNS: {
       registrar: "0xa4F6C921f914ff7972D7C55c15f015419326e0Ca",
       znsHub: "0x90098737eB7C3e73854daF1Da20dFf90d521929a",
       basicController: "0x1188dD1a0F42BA4a117EF1c09D884f5183D40B28",
+      zDao: "0x0FE5c0564E5F2dcE6a2c77A14A32d12461D23E78",
+    },
+    zAuction: {
       zAuction: "0xb2416Aed6f5439Ffa0eCCAaa2b643f3D9828f86B",
       legacyZAuction: "0x376030f58c76ECC288a4fce8F88273905544bC07",
-      zDao: "0x0FE5c0564E5F2dcE6a2c77A14A32d12461D23E78",
     },
     tokens: {
       wildToken: "0x3Ae5d499cfb8FB645708CC6DA599C90e64b33A79",
@@ -77,5 +85,4 @@ export const networkAddresses: Networks = {
     },
     sales: {},
   },
-  // goerli: {} ,
 };
