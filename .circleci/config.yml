@@ -35,7 +35,14 @@ workflows:
       - test:
           filters:
             branches:
-              ignore: main
+              only: je/init
+      - publish:
+          context: NPM_Publish
+          requires:
+            - test
+          filters:
+            branches:
+              only: je/init
   production:
     jobs:
       - test:
@@ -45,9 +52,4 @@ workflows:
               ignore: /.*/
             tags:
               only: /^v.*/
-      - publish:
-          context: NPM_Publish
-          requires:
-            - test
-          filters:
-            <<: *filters-production # this is calling the previously set yaml anchor
+      
