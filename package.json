@@ -1,5 +1,5 @@
 {
-  "name": "@zer0-tech/zer0-contracts",
+  "name": "@zer0-tech/zero-contracts",
   "version": "0.0.1",
   "description": "A place to store all the contract addresses for the Zer0 ecosystem",
   "main": "index.ts",
