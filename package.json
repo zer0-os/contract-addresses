@@ -2,7 +2,8 @@
   "name": "@zero-tech/zero-contracts",
   "version": "0.0.3",
   "description": "A place to store all the contract addresses for the Zer0 ecosystem",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc --build --verbose ./tsconfig.build.json",
     "lint": "eslint --fix src/**/*.ts"

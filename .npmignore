@@ -5,3 +5,4 @@ workflows
 tsconfig.json
 tsconfig.build.json
 tsconfig.build.tsbuildinfo
+node_modules
