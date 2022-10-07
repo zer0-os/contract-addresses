@@ -78,11 +78,48 @@ export const zer0ProtocolAddresses: Networks = {
       lootToken: "0x5bAbCA2Af93A9887C86161083b8A90160DA068f2",
     },
     staking: {
-      stakeFactory: "0xfC4D4b3d4d83f383FA30B2357a956cD718f0C991",
+      stakeFactory: "0x7bc9fcDD7E156A8d32e8ED602F4e8F06561f4570",
       lpToken: "0x123c1B5A87E4E11663F2604f3EbCAf4ba86e25E1",
-      wildStakingPool: "0xb1ABFc6C847a15Cb7FA213363CbACC375b1068A0",
-      lpStakingPool: "0x6D3475040CC0F9e48bD916e8559DA5A098eBc613",
+      wildStakingPool: "0x8a2Bc679FA92989ab6ef037892a994cD8E949545",
+      lpStakingPool: "0x77f854A1AF7f26bbF6626AD75DEC6Eb2D55BA75D",
     },
     sales: {},
+  },
+  goerli: {
+    zNS: {
+      registrar: "",
+      znsHub: "0x35921570D157D6E9DA51e67B47d43bAF5da1e108",
+      basicController: "",
+      zDAO: "",
+    },
+    zAuction: {
+      zAuction: "0xdF0f9F007A38aD25E0c02959374f38719Af5fCf8",
+      legacyZAuction: "",
+    },
+    tokens: {
+      wildToken: "0xdDd0516188a2240c864AAd7E95FF832038fa7804",
+      lootToken: "",
+      zeroToken: "",
+    },
+    staking: {
+      stakeFactory: "",
+      lpToken: "0x1A9A8894bc8611a39c7Ed690AED71b7918995F14",
+      wildStakingPool: "",
+      lpStakingPool: "",
+    },
+    sales: {
+      wheels: "",
+      wheels_updated: "",
+      kicks: "",
+      kicks_updated: "",
+      cribs: "",
+      crafts: "",
+      beasts: "",
+      airWild: {
+        season0: "",
+        season1: "",
+        season2: "",
+      },
+    },
   },
 };
