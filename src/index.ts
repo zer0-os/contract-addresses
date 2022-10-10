@@ -87,9 +87,11 @@ export const zer0ProtocolAddresses: Networks = {
   },
   goerli: {
     zNS: {
-      registrar: "",
-      znsHub: "0x35921570D157D6E9DA51e67B47d43bAF5da1e108",
-      basicController: "",
+      // verification issue for some, both in CLI and browser, maybe experimental goerli?
+      // beacon for znsHub: 0x8B86B3b2f4D49B33e75EF869c105AD77DA76d908
+      registrar: "0x009A11617dF427319210e842D6B202f3831e0116",
+      znsHub: "0xce1fE2DA169C313Eb00a2bad25103D2B9617b5e1",
+      basicController: "0xd23299F8f0BF17d2d037a12985F83c29A630E6F8",
       zDAO: "",
     },
     zAuction: {
@@ -98,28 +100,16 @@ export const zer0ProtocolAddresses: Networks = {
     },
     tokens: {
       wildToken: "0xdDd0516188a2240c864AAd7E95FF832038fa7804",
-      lootToken: "",
+      lootToken: "0x1A9A8894bc8611a39c7Ed690AED71b7918995F14",
       zeroToken: "",
     },
     staking: {
-      stakeFactory: "",
+      stakeFactory: "0x8CCC39985BB460A62678e5f1Ed04B08c2D02E2C0",
       lpToken: "0x1A9A8894bc8611a39c7Ed690AED71b7918995F14",
-      wildStakingPool: "",
-      lpStakingPool: "",
+      wildStakingPool: "0x0Ab90E0aBca23FdB5e7f447628C6f2BFDB4dE0D0",
+      lpStakingPool: "0x614E5FfD2D8e936eD29d979dF106081a471e1125",
     },
     sales: {
-      wheels: "",
-      wheels_updated: "",
-      kicks: "",
-      kicks_updated: "",
-      cribs: "",
-      crafts: "",
-      beasts: "",
-      airWild: {
-        season0: "",
-        season1: "",
-        season2: "",
-      },
     },
   },
 };
