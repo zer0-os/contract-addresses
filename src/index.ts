@@ -87,7 +87,6 @@ export const zer0ProtocolAddresses: Networks = {
   },
   goerli: {
     zNS: {
-      // verification issue for some, both in CLI and browser, maybe experimental goerli?
       // beacon for znsHub: 0x8B86B3b2f4D49B33e75EF869c105AD77DA76d908
       registrar: "0x009A11617dF427319210e842D6B202f3831e0116",
       znsHub: "0xce1fE2DA169C313Eb00a2bad25103D2B9617b5e1",
