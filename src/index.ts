@@ -87,7 +87,6 @@ export const zer0ProtocolAddresses: Networks = {
   },
   goerli: {
     zNS: {
-      // beacon for znsHub: 0x8B86B3b2f4D49B33e75EF869c105AD77DA76d908
       registrar: "0x009A11617dF427319210e842D6B202f3831e0116",
       znsHub: "0xce1fE2DA169C313Eb00a2bad25103D2B9617b5e1",
       basicController: "0xd23299F8f0BF17d2d037a12985F83c29A630E6F8",
@@ -99,14 +98,14 @@ export const zer0ProtocolAddresses: Networks = {
     },
     tokens: {
       wildToken: "0x0e46c45f8aca3f89Ad06F4a20E2BED1A12e4658C",
-      lootToken: "0x1A9A8894bc8611a39c7Ed690AED71b7918995F14",
+      lootToken: "0x196bc789E03761904E3d7266fa57f2001592D25A",
       zeroToken: "",
     },
     staking: {
-      stakeFactory: "0x8CCC39985BB460A62678e5f1Ed04B08c2D02E2C0",
-      lpToken: "0x1A9A8894bc8611a39c7Ed690AED71b7918995F14",
-      wildStakingPool: "0x0Ab90E0aBca23FdB5e7f447628C6f2BFDB4dE0D0",
-      lpStakingPool: "0x614E5FfD2D8e936eD29d979dF106081a471e1125",
+      stakeFactory: "0xAeEaC5F790dD98FD7166bBD50d9938Bf542AFeEf",
+      lpToken: "0x196bc789E03761904E3d7266fa57f2001592D25A",
+      wildStakingPool: "0x376030f58c76ECC288a4fce8F88273905544bC07",
+      lpStakingPool: "0xCa0F071fcf5b36436F75E422b5Bd23666015b9f9",
     },
     sales: {
     },
