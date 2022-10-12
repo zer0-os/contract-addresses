@@ -87,7 +87,7 @@ export const zer0ProtocolAddresses: Networks = {
   },
   goerli: {
     zNS: {
-      registrar: "0x009A11617dF427319210e842D6B202f3831e0116", // deploy with  beacon not regular
+      registrar: "0x009A11617dF427319210e842D6B202f3831e0116",
       znsHub: "0xce1fE2DA169C313Eb00a2bad25103D2B9617b5e1",
       basicController: "0xd23299F8f0BF17d2d037a12985F83c29A630E6F8",
       zDAO: "0x4d681D8245e956E1cb295Abe870DF6736EA5F70e",
