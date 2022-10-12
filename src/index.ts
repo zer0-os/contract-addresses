@@ -5,6 +5,7 @@ export const zer0ProtocolAddresses: Networks = {
   mainnet: {
     zNS: {
       registrar: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
+      domainPurchaser: "",
       znsHub: "0x3F0d0a0051D1E600B3f6B35a07ae7A64eD1A10Ca",
       basicController: "0xa05Ae774Da859943B7B859cd2A6aD9F5f1651d6a",
       zDAO: "",
@@ -42,6 +43,7 @@ export const zer0ProtocolAddresses: Networks = {
   kovan: {
     zNS: {
       registrar: "0xC613fCc3f81cC2888C5Cccc1620212420FFe4931",
+      domainPurchaser: "",
       znsHub: "",
       basicController: "0x2EF34C52138781C901Fe9e50B64d80aA9903f730",
       zDao: "",
@@ -65,6 +67,7 @@ export const zer0ProtocolAddresses: Networks = {
   rinkeby: {
     zNS: {
       registrar: "0xa4F6C921f914ff7972D7C55c15f015419326e0Ca",
+      domainPurchaser: "",
       znsHub: "0x90098737eB7C3e73854daF1Da20dFf90d521929a",
       basicController: "0x1188dD1a0F42BA4a117EF1c09D884f5183D40B28",
       zDao: "0x0FE5c0564E5F2dcE6a2c77A14A32d12461D23E78",
@@ -88,6 +91,7 @@ export const zer0ProtocolAddresses: Networks = {
   goerli: {
     zNS: {
       registrar: "0x009A11617dF427319210e842D6B202f3831e0116",
+      domainPurchaser: "0x19f127f0a5ACCF0E6E2DdcE63085750a74EBc44A",
       znsHub: "0xce1fE2DA169C313Eb00a2bad25103D2B9617b5e1",
       basicController: "0xd23299F8f0BF17d2d037a12985F83c29A630E6F8",
       zDAO: "0x4d681D8245e956E1cb295Abe870DF6736EA5F70e",
