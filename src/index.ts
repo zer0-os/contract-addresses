@@ -106,7 +106,7 @@ export const zer0ProtocolAddresses: Networks = {
     tokens: {
       wildToken: "0x0e46c45f8aca3f89Ad06F4a20E2BED1A12e4658C",
       lootToken: "0x196bc789E03761904E3d7266fa57f2001592D25A",
-      zeroToken: "",
+      zeroToken: "0x3Fa5ae3F31D38bCc2cf1dA2394c938dA8a1C9f69",
     },
     staking: {
       stakeFactory: "0xAeEaC5F790dD98FD7166bBD50d9938Bf542AFeEf",
