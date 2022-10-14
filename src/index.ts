@@ -9,7 +9,7 @@ export const zer0ProtocolAddresses: Networks = {
       subregistrarBeacon: "0x4CD06F23e9Cc5658acCa6D5d681511f3d5616bc9",
       znsHub: "0x3F0d0a0051D1E600B3f6B35a07ae7A64eD1A10Ca",
       basicController: "0xa05Ae774Da859943B7B859cd2A6aD9F5f1651d6a",
-      zDAO: "",
+      zDAO: "0x7701913b65C9bCDa4d353F77EC12123d57D77f1e",
     },
     zAuction: {
       zAuction: "0x411973Fa81158A4c7767a0D6F7dF62723fDd541F",
@@ -72,7 +72,7 @@ export const zer0ProtocolAddresses: Networks = {
       domainPurchaser: "",
       znsHub: "0x90098737eB7C3e73854daF1Da20dFf90d521929a",
       basicController: "0x1188dD1a0F42BA4a117EF1c09D884f5183D40B28",
-      zDao: "0x0FE5c0564E5F2dcE6a2c77A14A32d12461D23E78",
+      zDao: "0x73D44dEa3A3334aB2504443479aD531FfeD2d2D9",
     },
     zAuction: {
       zAuction: "0xb2416Aed6f5439Ffa0eCCAaa2b643f3D9828f86B",
