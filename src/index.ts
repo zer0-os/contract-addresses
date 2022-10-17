@@ -5,9 +5,11 @@ export const zer0ProtocolAddresses: Networks = {
   mainnet: {
     zNS: {
       registrar: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
+      domainPurchaser: "",
+      subregistrarBeacon: "0x4CD06F23e9Cc5658acCa6D5d681511f3d5616bc9",
       znsHub: "0x3F0d0a0051D1E600B3f6B35a07ae7A64eD1A10Ca",
       basicController: "0xa05Ae774Da859943B7B859cd2A6aD9F5f1651d6a",
-      zDAO: "",
+      zDAO: "0x7701913b65C9bCDa4d353F77EC12123d57D77f1e",
     },
     zAuction: {
       zAuction: "0x411973Fa81158A4c7767a0D6F7dF62723fDd541F",
@@ -42,6 +44,8 @@ export const zer0ProtocolAddresses: Networks = {
   kovan: {
     zNS: {
       registrar: "0xC613fCc3f81cC2888C5Cccc1620212420FFe4931",
+      domainPurchaser: "",
+      subregistrarBeacon: "",
       znsHub: "",
       basicController: "0x2EF34C52138781C901Fe9e50B64d80aA9903f730",
       zDao: "",
@@ -65,9 +69,10 @@ export const zer0ProtocolAddresses: Networks = {
   rinkeby: {
     zNS: {
       registrar: "0xa4F6C921f914ff7972D7C55c15f015419326e0Ca",
+      domainPurchaser: "",
       znsHub: "0x90098737eB7C3e73854daF1Da20dFf90d521929a",
       basicController: "0x1188dD1a0F42BA4a117EF1c09D884f5183D40B28",
-      zDao: "0x0FE5c0564E5F2dcE6a2c77A14A32d12461D23E78",
+      zDao: "0x73D44dEa3A3334aB2504443479aD531FfeD2d2D9",
     },
     zAuction: {
       zAuction: "0xb2416Aed6f5439Ffa0eCCAaa2b643f3D9828f86B",
@@ -78,11 +83,38 @@ export const zer0ProtocolAddresses: Networks = {
       lootToken: "0x5bAbCA2Af93A9887C86161083b8A90160DA068f2",
     },
     staking: {
-      stakeFactory: "0xfC4D4b3d4d83f383FA30B2357a956cD718f0C991",
+      stakeFactory: "0x7bc9fcDD7E156A8d32e8ED602F4e8F06561f4570",
       lpToken: "0x123c1B5A87E4E11663F2604f3EbCAf4ba86e25E1",
-      wildStakingPool: "0xb1ABFc6C847a15Cb7FA213363CbACC375b1068A0",
-      lpStakingPool: "0x6D3475040CC0F9e48bD916e8559DA5A098eBc613",
+      wildStakingPool: "0x8a2Bc679FA92989ab6ef037892a994cD8E949545",
+      lpStakingPool: "0x77f854A1AF7f26bbF6626AD75DEC6Eb2D55BA75D",
     },
     sales: {},
+  },
+  goerli: {
+    zNS: {
+      registrar: "0x009A11617dF427319210e842D6B202f3831e0116",
+      domainPurchaser: "0x19f127f0a5ACCF0E6E2DdcE63085750a74EBc44A",
+      subregistrarBeacon: "0x9e20B753d87c4B6632394566EcbE7453B5404871",
+      znsHub: "0xce1fE2DA169C313Eb00a2bad25103D2B9617b5e1",
+      basicController: "0xd23299F8f0BF17d2d037a12985F83c29A630E6F8",
+      zDAO: "0x4d681D8245e956E1cb295Abe870DF6736EA5F70e",
+    },
+    zAuction: {
+      zAuction: "0xdF0f9F007A38aD25E0c02959374f38719Af5fCf8",
+      legacyZAuction: "0xeABfD3B80A38a95006899Ddf7e8d5F89A5dE6dF3",
+    },
+    tokens: {
+      wildToken: "0x0e46c45f8aca3f89Ad06F4a20E2BED1A12e4658C",
+      lootToken: "0x196bc789E03761904E3d7266fa57f2001592D25A",
+      zeroToken: "0x3Fa5ae3F31D38bCc2cf1dA2394c938dA8a1C9f69",
+    },
+    staking: {
+      stakeFactory: "0xAeEaC5F790dD98FD7166bBD50d9938Bf542AFeEf",
+      lpToken: "0x196bc789E03761904E3d7266fa57f2001592D25A",
+      wildStakingPool: "0x376030f58c76ECC288a4fce8F88273905544bC07",
+      lpStakingPool: "0xCa0F071fcf5b36436F75E422b5Bd23666015b9f9",
+    },
+    sales: {
+    },
   },
 };
