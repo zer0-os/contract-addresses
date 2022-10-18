@@ -70,7 +70,7 @@ export const zer0ProtocolAddresses: Networks = {
       zDao: "0x0FE5c0564E5F2dcE6a2c77A14A32d12461D23E78",
     },
     zAuction: {
-      zAuction: "0xb2416Aed6f5439Ffa0eCCAaa2b643f3D9828f86B",
+      zAuction: "0x78764080e4Fb36CB24487d3Ca8e3aa92cD7C58fc",
       legacyZAuction: "0x376030f58c76ECC288a4fce8F88273905544bC07",
     },
     tokens: {
