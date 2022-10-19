@@ -1,6 +1,6 @@
 {
   "name": "@zero-tech/zero-contracts",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A place to store all the contract addresses for the Zer0 ecosystem",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
