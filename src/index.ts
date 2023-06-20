@@ -3,7 +3,8 @@ export * from "./types";
 
 const defaultRegistrar = "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D";
 
-export const zer0ProtocolAddresses = {
+// TODO re add the typing here for when it's used in other repos!!!
+export const zer0ProtocolAddresses: Networks = {
   mainnet: {
     zNS: {
       registrar: defaultRegistrar,
