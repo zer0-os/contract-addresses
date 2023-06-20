@@ -1,10 +1,13 @@
 import { Networks } from "./types";
 export * from "./types";
 
+const defaultRegistrar = "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D";
+
+// TODO re add the typing here for when it's used in other repos!!!
 export const zer0ProtocolAddresses: Networks = {
   mainnet: {
     zNS: {
-      registrar: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
+      registrar: defaultRegistrar,
       domainPurchaser: "",
       subregistrarBeacon: "0x4CD06F23e9Cc5658acCa6D5d681511f3d5616bc9",
       znsHub: "0x3F0d0a0051D1E600B3f6B35a07ae7A64eD1A10Ca",
@@ -26,18 +29,51 @@ export const zer0ProtocolAddresses: Networks = {
       wildStakingPool: "0x3aC551725ac98C5DCdeA197cEaaE7cDb8a71a2B4",
       lpStakingPool: "0x9E87a268D42B0Aba399C121428fcE2c626Ea01FF",
     },
+    // For every sale, the top level domain of the sale is on the default registrar above
     sales: {
-      wheels: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
-      wheels_updated: "0x19a55608f360f6Df69B7932dC2F65EDEFAa88Dc2",
-      kicks: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
-      kicks_updated: "0x6427CcA6CD4586ec7044Cc138158ba4Eb1633711",
-      cribs: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
-      crafts: "0x7bA5faff747a3cA7E4ebe65F64e3EDFAEE136846",
-      beasts: "0x1A178CFD768F74b3308cbca9998C767F4E5B2CF8",
-      airWild: {
-        season0: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
-        season1: "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D",
-        season2: "0x35D2F3CDAf5e2DeA9e6Ae3553A4CaACBA860A395",
+      moto: {
+        genesis: {
+          domain: "0x0025Dd25E1aD8C35a63d690E48162BBE844C7882",
+          collection: "0x51bd5948CF84a1041d2720F56DEd5e173396FC95"
+        },
+      },
+      pals: {
+        gen: {
+          domain: defaultRegistrar,
+          collection: "0x90a1f4B78Fa4198BB620b7686f510FD476Ec7A0B"
+        },
+      },
+      wheels: {
+        genesis: defaultRegistrar
+      },
+      // TODO Resolve how `wheels_updated` and `kicks_updated` are used (if at all)
+      // Following the zOS UI, wheels exist on the default registrar
+      // wheels_updated: "0x19a55608f360f6Df69B7932dC2F65EDEFAa88Dc2",
+      // kicks_updated: "0x6427CcA6CD4586ec7044Cc138158ba4Eb1633711",
+      kicks: {
+        airwild: {
+          domain: defaultRegistrar,
+          season0: defaultRegistrar,
+          season1: defaultRegistrar,
+          season2: {
+            domain: defaultRegistrar,
+            collection: "0x35D2F3CDAf5e2DeA9e6Ae3553A4CaACBA860A395"
+          }
+        }
+      },
+      cribs: defaultRegistrar,
+      craft: defaultRegistrar,
+      // TODO this address deviates from what is on zOS?
+      // crafts: "0x7bA5faff747a3cA7E4ebe65F64e3EDFAEE136846",
+      beasts: {
+        wape: {
+          domain: "0x23682326C87D079F73bd88402efD341E07731aE8",
+          collection: "0x05F81F870cBca79E9171f22886b58b5597A603AA"
+        },
+        wolf: {
+          domain: "0x23682326C87D079F73bd88402efD341E07731aE8",
+          collection: "0x1A178CFD768F74b3308cbca9998C767F4E5B2CF8",
+        }
       },
     },
   },
