@@ -1,9 +1,9 @@
 import { Protocols } from "./types";
 export * from "./types";
 
-const defaultRegistrar = "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D";
+export const defaultRegistrar = "0xc2e9678A71e50E5AEd036e00e9c5caeb1aC5987D";
 
-export const contractAddresses : Protocols = {
+export const contracts : Protocols = {
   mainnet: {
     zNS: {
       registrar: defaultRegistrar,
@@ -30,6 +30,50 @@ export const contractAddresses : Protocols = {
     },
     // For every sale, the top level domain of the sale is on the default registrar above
     sales: [
+      {
+        name: "guild",
+        type: "collection",
+        domainContract: defaultRegistrar,
+        nftContract : defaultRegistrar
+      },
+      {
+        name: "WoW",
+        type: "domain",
+        domainContract: defaultRegistrar,
+        subcollections: [
+          {
+            name: "poster",
+            type: "collection",
+            domainContract: defaultRegistrar,
+            nftContract: defaultRegistrar
+          }
+        ]
+      },
+      {
+        name: "concept",
+        type: "domain",
+        domainContract: defaultRegistrar,
+        subcollections: [
+          {
+            name: "architecture",
+            type: "collection",
+            domainContract: defaultRegistrar,
+            nftContract: defaultRegistrar
+          },
+          {
+            name: "environment",
+            type: "collection",
+            domainContract: defaultRegistrar,
+            nftContract: defaultRegistrar
+          },
+          {
+            name: "sketches",
+            type: "collection",
+            domainContract: defaultRegistrar,
+            nftContract: defaultRegistrar
+          }
+        ]
+      },
       {
         name: "moto",
         type: "domain",
@@ -63,7 +107,7 @@ export const contractAddresses : Protocols = {
         subcollections: [
           {
             name: "genesis",
-            type: "domain",
+            type: "collection",
             domainContract: defaultRegistrar,
             nftContract: defaultRegistrar,
           },

@@ -26,7 +26,7 @@ interface Staking {
   lpStakingPool : string;
 }
 
-interface Collection {
+export interface Collection {
   name : string;
   type : "domain" | "collection";
   domainContract : string;
@@ -34,12 +34,15 @@ interface Collection {
   subcollections ?: Maybe<Array<Collection>>;
 }
 
+export interface Ecosystem {
+  zNS : ZNS;
+  zAuction : zAuction;
+  tokens : Tokens;
+  staking : Staking;
+  sales : Array<Collection>;
+};
+
 export interface Protocols {
-  [network : string] : {
-    zNS : ZNS;
-    zAuction : zAuction;
-    tokens : Tokens;
-    staking : Staking;
-    sales : Array<Collection>;
-  };
+  mainnet : Ecosystem;
+  [network : string] : Ecosystem;
 }
