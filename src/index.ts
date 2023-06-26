@@ -32,9 +32,28 @@ export const contracts : Protocols = {
     sales: [
       {
         name: "guild",
-        type: "collection",
+        type: "domain",
         domainContract: defaultRegistrar,
-        nftContract : defaultRegistrar
+        subcollections: [
+          {
+            name: "frank",
+            type: "collection",
+            domainContract: defaultRegistrar,
+            nftContract: defaultRegistrar
+          },
+          {
+            name: "jpierce",
+            type: "collection",
+            domainContract: defaultRegistrar,
+            nftContract: defaultRegistrar
+          },
+          {
+            name: "knight",
+            type: "collection",
+            domainContract: defaultRegistrar,
+            nftContract: defaultRegistrar
+          }
+        ]
       },
       {
         name: "WoW",
